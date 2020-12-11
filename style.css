@@ -12,8 +12,14 @@ body{
     max-width: 800px;
     margin: auto;
     display: block;
+    
 }
-
+.bg{
+    background-image: "/images/emoji.jpg";
+    height:50%;
+    background-size: auto;
+    background-position: center;
+}
 textarea{
     width: 80%;
     height: 20vh;
@@ -23,32 +29,30 @@ textarea{
     display: flex;
 }
 
-header{
-    height: 6rem;
-    background-color:lightblue;
+.header{
+        background-color:lightblue;
+        padding: 1rem 1rem;
+        text-align: center;
+        color: black;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        font-family:'Kalam', cursive;   
 }
 
-header div img{
-    margin-top: 0rem;
-    width:6rem;
-    height: 6rem;
-   
-}
 
-header div{
-    display: flex;
-    justify-content: space-between;
-}
-h1{
-    margin-top:  2.3rem;
-    margin-right: 1rem;
+
+ h1{
     font-family:'Kalam', cursive;
+    text-align: center;
+    
+    
+
 }
 
 #output {
     border: 1px solid black;
     width: 80%;
-    height: 10vh;
+    height: 20vh;
     margin: 1rem;
     padding: 1rem;
     background-color: lightyellow;
