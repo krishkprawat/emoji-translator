@@ -5,7 +5,7 @@
 body{
     font-family:'Kalam', cursive;
     margin: 0px;
-    background-image:""
+    
 }
 
 .container{
@@ -25,7 +25,7 @@ textarea{
 
 header{
     height: 6rem;
-    background-color:yellow;
+    background-color:lightblue;
 }
 
 header div img{
@@ -56,7 +56,7 @@ h1{
 #btn-translate {
     margin-left: 4vh;
     padding: 1rem;
-    background-color: yellow;
+    background-color:lightblue;
     font-family:'Acme', sans-serif;
     font-weight: bold;
     border-radius: 20px;
@@ -67,10 +67,10 @@ h1{
 
 }
 .footer{
-    background-color: yellow;
+    background-color:lightblue;
     padding: 2rem 1rem;
     text-align: center;
     color: black;
     border-top-right-radius: 1rem;
-    font-family:'Acme', sans-serif; ;
+    font-family:'Acme', sans-serif; 
 }
