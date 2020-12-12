@@ -7,15 +7,15 @@ body{
     margin: 0px;    
 }
 .bg{
-    background-image: url("/images/emoji.jpg");
+    background-image: url("/images/emoji2.jpg");
 
   /* Full height */
   height:auto;
 
   /* Center and scale the image nicely */
-  background-position:auto;
-  background-repeat:repeat;
-  background-size:auto;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
   opacity:0.90;
   
 }
