@@ -1,34 +1,31 @@
 var btnTranslate = document.querySelector("#btn-translate");
-var txtInput= document.querySelector("#txt-input");
-var outputDiv= document.querySelector("#output");
+var txtInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
 
-var serverURL="https://api.funtranslations.com/translate/emoji.json"
+var serverURL = "https://api.funtranslations.com/translate/emoji.json";
 //  var serverURL="https://api.funtranslations.com/translate/groot.json"
 
-
-function getTranslationURL(input){
-    return serverURL +"?"+ "text=" + input
+function getTranslationURL(input) {
+  return serverURL + "?" + "text=" + input; //text is key, input is value.
 }
 
-function errorHandler(error){
-    console.log("error occured", error);
-    alert("something wrong with server.")
+function errorHandler(error) {
+  console.log("error occured", error);
+  alert("something wrong with server.");
 }
 
 function clickHandler() {
-    // taking input
-    var inputText=txtInput.value;
-    // calling server
-    fetch(getTranslationURL(inputText))
-    .then(response => response.json())
-    .then(json => {
-        var translatedText = json.contents.translated;
-        // output
-        outputDiv.innerText = translatedText;
-
+  // taking input
+  var inputText = txtInput.value;
+  // calling server
+  fetch(getTranslationURL(inputText))
+    .then((response) => response.json())
+    .then((json) => {
+      var translatedText = json.contents.translated;
+      // output
+      outputDiv.innerText = translatedText;
     })
-    .catch (errorHandler)
-};
+    .catch(errorHandler);
+}
 
-btnTranslate.addEventListener("click", clickHandler)
-
+btnTranslate.addEventListener("click", clickHandler);
