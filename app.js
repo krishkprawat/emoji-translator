@@ -6,7 +6,7 @@ var serverURL = "https://api.funtranslations.com/translate/emoji.json";
 //  var serverURL="https://api.funtranslations.com/translate/groot.json"
 
 function getTranslationURL(input) {
-  return serverURL + "?"+ "text"= input; //text is key, input is value. url encoding
+  return serverURL + "?"+ "text= " +input; //text is key, input is value. url encoding
 }
 
 function errorHandler(error) {
